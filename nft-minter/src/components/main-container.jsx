@@ -10,7 +10,7 @@ const Main = () => {
         <>
             <main>
                 <header>
-                    <h1> Image Generator !</h1>
+                    <h1> NFT Factory</h1>
                 </header>
                 <center>
                     <div id="container">
@@ -21,7 +21,7 @@ const Main = () => {
                             <label>
                                 <div id="fill"></div>
                             </label>
-                            <button onClick={loadMint}>create !</button>
+                            <button onClick={loadMint}>Mint</button>
                         </div>
                     </div>
                 </center>
