@@ -1,28 +1,27 @@
-import './main-container.css';
+import './main-container.scss';
 
 const Main = () => {
+
+    const loadMint = () => {
+        document.getElementById('fill').style.display = 'block';
+    }
+
     return(
         <>
             <main>
                 <header>
-                    <h1> NFT Minter !</h1>
+                    <h1> Image Generator !</h1>
                 </header>
                 <center>
                     <div id="container">
                         <div id="img-container">
-                            IMG IMG IMG IMGIMG IMG
-                            IMG IMGIMG IMGIMG IMG
-                            IMG IMGIMG IMGIMG IMGIMG 
-                            IMG IMGIMG IMGIMG IMGIMG IMG
-                            IMG IMGIMG IMGIMG IMGIMG IMG
-                            IMG IMGIMG IMGIMG IMGIMG IMG
-                            IMG IMGIMG IMGIMG IMGIMG IMG
-                            IMG IMGIMG IMGIMG IMGIMG IMG IMG
-                            IMG IMGIMG IMGIMG IMGIMG IMG
+
                         </div>
                         <div id="dashboard">
-                            <div id="loader"></div>
-                            <button>BUTTON</button>
+                            <label>
+                                <div id="fill"></div>
+                            </label>
+                            <button onClick={loadMint}>create !</button>
                         </div>
                     </div>
                 </center>
