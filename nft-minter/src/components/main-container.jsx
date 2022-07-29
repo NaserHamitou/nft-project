@@ -1,5 +1,6 @@
 import './main-container.scss';
 import NftComponent from './nft-component';
+import React from "react";
 
 const Main = () => {
 

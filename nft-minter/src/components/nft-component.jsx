@@ -3,8 +3,10 @@ import eyes1 from "../res/nft/eyes/eyes-4.png"
 import hair from '../res/nft/hair/hair-4.png'
 import nose from '../res/nft/nose/nose-1.png';
 import mouth from '../res/nft/mouth/m-3.png'
+import React from "react";
 import './nft-component.css';
 import { useState } from "react";
+import { eyeURL } from "../storage/storage.ts";
 
 
 
@@ -16,7 +18,7 @@ const NftComponent = () => {
     
     const randomize = () => {
         setTest('TEST SUCCEED');
-        setEye('https://reactjs.org/logo-og.png');
+        setEye(eyeURL);
     }
 
     return(
