@@ -14,6 +14,10 @@ header{
     color: white;
 }
 
+NftComponent{
+  display: none;
+}
+
 #container{
 
     padding-top: 1px;
@@ -109,7 +113,7 @@ label {
   background: linear-gradient(to bottom, #93EE2D 15%, #32a80e);
   height: 100%;
   width: 0%;
-  animation: grow 10s forwards;
+  animation: grow 2s forwards;
   box-shadow: 0 0 8px 1px white inset;
   &:before {
     content: '';

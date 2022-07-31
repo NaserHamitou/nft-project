@@ -1,11 +1,15 @@
 import './main-container.scss';
 import NftComponent from './nft-component';
-import React from "react";
+import React, { useRef } from "react";
 
 const Main = () => {
 
+    const nftRef = useRef()
+
     const loadMint = () => {
-        document.getElementById('fill').style.display = 'block';
+        document.getElementById('fill').style.display = 'none';
+        setTimeout(() => {document.getElementById('fill').style.display = 'block'}, 200);
+        nftRef.current.callGenerateChar();
     }
 
     return(
@@ -17,7 +21,7 @@ const Main = () => {
                 <center>
                     <div id="container">
                         <div id="img-container">
-                            <NftComponent></NftComponent>
+                            <NftComponent ref={nftRef}></NftComponent>
                         </div>
                         <div id="dashboard">
                             <label>
