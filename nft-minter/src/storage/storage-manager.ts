@@ -69,7 +69,6 @@ const getUrl = async (reference: StorageReference) => {
   await getDownloadURL(reference)
   .then((url) => {
     selectedURL = url;
-    console.log(url);
   })
   .catch((error) => {
     console.log(error);

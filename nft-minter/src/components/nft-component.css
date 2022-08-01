@@ -4,6 +4,19 @@ img{
     position: relative;
 }
 
+canvas{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+#download-button{
+    display: none;
+    height: 30px;
+}
+
 .layers{
     position: absolute;
     margin-left: auto;
