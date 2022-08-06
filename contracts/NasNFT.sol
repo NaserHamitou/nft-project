@@ -16,7 +16,7 @@ contract NasWorldNFT is ERC721, Ownable {
     mapping(address => uint256) public walletMints;
 
     constructor() payable ERC721('NasWorldNFT', 'NW'){
-        mintPrice = 0.02 ether;
+        mintPrice = 0.001 ether;
         totalSupply = 0;
         maxSupply = 1000;
         maxPerWallet = 3;
@@ -43,7 +43,7 @@ contract NasWorldNFT is ERC721, Ownable {
 
     function mint(uint256 quantity_) public payable {
         require(isPublicMintEnabled, 'minting not enabled');
-        require(msg.value == quantity_ * mintPrice, 'wrong mint value');
+        require(msg.value == mintPrice, 'wrong mint value');
         require(totalSupply + quantity_ <= maxSupply, 'Sold out!');
         require(walletMints[msg.sender] + quantity_ <= maxPerWallet, 'exceed max wallet');
 

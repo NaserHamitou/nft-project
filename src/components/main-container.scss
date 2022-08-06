@@ -19,7 +19,6 @@ NftComponent{
 }
 
 #container{
-
     padding-top: 1px;
     width: 30vw;
     min-width: 370px;
@@ -39,6 +38,56 @@ NftComponent{
     border-radius: 15px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     cursor: pointer;
+}
+
+#welcome-mask{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #30373fe8;
+}
+
+#welcome-mask center {
+  margin-top: 20vh;
+}
+
+#welcome-mask button {
+  height: 50px;
+  margin: 30px;
+}
+
+#welcome-mask #connect {
+  background-image: radial-gradient(100% 100% at 100% 0, #C75E15 0, #EE811A 100%);
+  width: 210px;
+  overflow-wrap: break-word;
+  padding: 2px;
+}
+
+#welcome-mask #help {
+  background-color: #2D3951;
+  background-image: none;
+}
+
+#welcome-mask #help:active {
+  box-shadow: none;
+  transform: none;
+}
+
+#welcome-mask #help:hover, #connect:hover {
+  transform: translateY(0);
+}
+
+#connect-container{
+  width: 70vw;
+  max-width: 500px;
+  background-color: #F0EEF2;
+  text-align: center;
+  padding:  1vw;
+  border-radius: 5px;
+  font-size: larger;
 }
 
 #dashboard{
@@ -70,7 +119,7 @@ button {
   position: relative;
   text-align: left;
   text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
+  transition: box-shadow 2s,transform 2s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
