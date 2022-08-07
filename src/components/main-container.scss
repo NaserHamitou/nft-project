@@ -18,6 +18,121 @@ NftComponent{
   display: none;
 }
 
+.lines{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: radial-gradient(#444cf7 0.85px, #0E0F1A 0.85px);
+  background-size: 17px 17px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.line {
+  position: absolute;
+  width: 1px;
+  height: 100vh;
+  top: 0;
+  left: 50vw;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+.line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 15vh;
+  width: 100vw;
+  top: -50vh;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+  -webkit-animation: drop 7s 0s infinite;
+          animation: drop 7s 0s infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+          animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+.line:nth-child(1) {
+  margin-left: -25vw;
+  transform: rotate(90deg);
+}
+.line:nth-child(1)::after {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.line:nth-child(3) {
+  margin-left: 25vw;
+}
+.line:nth-child(3)::after {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+.line:nth-child(4) {
+  margin-left: 25vw;
+  transform: rotate(270deg);
+}
+.line:nth-child(4)::after {
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+}
+
+.line:nth-child(5) {
+  left: 25vw;
+}
+.line:nth-child(5)::after {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.line:nth-child(6) {
+  top: -10vw;
+  transform: rotate(270deg);
+}
+.line:nth-child(6)::after {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.line:nth-child(7) {
+  transform: rotate(90deg);
+  top: 16vw;
+}
+.line:nth-child(7)::after {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.line:nth-child(8) {
+  left: 87vw;
+}
+.line:nth-child(8)::after {
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+}
+
+@-webkit-keyframes drop {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 110%;
+  }
+}
+
+@keyframes drop {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 110%;
+  }
+}
+
 #container{
     padding-top: 1px;
     width: 30vw;
@@ -100,7 +215,6 @@ NftComponent{
 /* CSS */
 button {
   align-items: center;
-  appearance: none;
   background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
   border: 0;
   border-radius: 6px;
@@ -112,7 +226,6 @@ button {
   font-family: 'Poppins', sans-serif;
   justify-content: center;
   line-height: 1;
-  list-style: none;
   overflow: hidden;
   padding-left: 16px;
   padding-right: 16px;
@@ -187,5 +300,10 @@ label {
   }
 }
 
+@media only screen and (max-width: 389px) {
+  .lines{
+    display: none;
+  }
+}
 
 

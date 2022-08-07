@@ -1,6 +1,7 @@
 import './main-container.scss';
 import NftComponent from './nft-component';
 import React, { useRef, useState } from "react";
+import { Link } from 'react-router-dom';
 import { ethers, BigNumber } from 'ethers';
 import nasWorldNFT from '../NasWorldNFT.json';
 
@@ -69,7 +70,7 @@ const Main = () => {
                                 <b>NOTE:</b> If you have any questions about
                                  how blockchain works, click the help button bellow. 👇
                             </p>
-                            <button id="connect" onClick={connectAccount}>Connect  to MetaMask</button> <button id="help">Help/FAQ</button>
+                            <button id="connect" onClick={connectAccount}>Connect  to MetaMask</button> <Link to='/help' role='button' id='help'>Help/FAQ</Link>
                         </div>
                     </center>
                 </div> 
@@ -87,10 +88,20 @@ const Main = () => {
                             <label>
                                 <div id="fill"></div>
                             </label>
-                            <button onClick={loadMint}>Mint</button>
+                            <button style={{width: '25%'}} onClick={loadMint}>Mint</button>
                         </div>
                     </div>
                 </center>
+                <div class="lines">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
             </main>
         </>
     )
