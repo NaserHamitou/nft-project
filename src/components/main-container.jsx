@@ -85,7 +85,7 @@ const Main = () => {
                             <NftComponent ref={nftRef}></NftComponent>
                         </div>
                         <div id="dashboard">
-                            <label>
+                            <label id="load-bar">
                                 <div id="fill"></div>
                             </label>
                             <button style={{width: '25%'}} onClick={loadMint}>Mint</button>
