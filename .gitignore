@@ -1,6 +1,4 @@
 node_modules
-<<<<<<< HEAD
-=======
 .env
 coverage
 coverage.json
@@ -11,4 +9,3 @@ typechain-types
 cache
 artifacts
 
->>>>>>> Web3-dev
