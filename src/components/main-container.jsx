@@ -70,7 +70,7 @@ const Main = () => {
                                 <b>NOTE:</b> If you have any questions about
                                  how blockchain works, click the help button bellow. 👇
                             </p>
-                            <button id="connect" onClick={connectAccount}>Connect  to MetaMask</button> <Link to='/help' role='button' id='help'>Help/FAQ</Link>
+                            <button id="connect" onClick={connectAccount}>Connect  to MetaMask</button> <Link to='/help' role='button'><p id='help'>Help/FAQ</p></Link>
                         </div>
                     </center>
                 </div> 
@@ -92,15 +92,16 @@ const Main = () => {
                         </div>
                     </div>
                 </center>
-                <div class="lines">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
+                <div className='bg-blur'></div>
+                <div className="lines">
+                    <div className="line"></div>
+                    <div className="line"></div>
+                    <div className="line"></div>
+                    <div className="line"></div>
+                    <div className="line"></div>
+                    <div className="line"></div>
+                    <div className="line"></div>
+                    <div className="line"></div>
                 </div>
             </main>
         </>
