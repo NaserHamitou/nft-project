@@ -1,0 +1,125 @@
+#background{
+    background-color: #E8E8F0;
+    height: 100%;
+    padding-bottom: 300px;
+}
+
+#help-main{
+    margin-left: 25vw;
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+}
+
+.faq-header{
+    font-size: 42px;
+    border-bottom: 1px dotted #ccc;
+    padding: 24px;
+  }
+  
+  .faq-content {
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .faq-question {
+    padding: 20px 0;
+    border-bottom: 1px dotted #ccc;
+  }
+  
+  .panel-title {
+    font-size: 24px;
+    width: 93%;
+    position: relative;
+    margin: 0;
+    padding: 5px 10px 5px 48px;
+    display: block;
+    cursor: pointer;
+    margin-left: 2px;
+    color: black;
+  }
+  
+  .panel-content {
+    font-size: 20px;
+    padding: 0px 14px;
+    margin: 0 40px;
+    height: 0;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    opacity: 0;
+    -webkit-transition: .4s ease;
+    -moz-transition: .4s ease;
+    -o-transition: .4s ease;
+    transition: .4s ease;
+    color: black;
+  }
+  
+  .panel:checked ~ .panel-content{
+    height: auto;
+    opacity: 1;
+    padding: 14px;
+  }
+  
+  .plus {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 8px;
+    z-index: 5;
+    font-size: 26px;
+    line-height: 100%;
+    -webkit-user-select: none;    
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-transition: .2s ease;
+    -moz-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+  }
+  
+  .panel:checked ~ .plus {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  
+  .panel {
+    display: none;
+  }
+
+@media only screen and (max-width: 1000px) {
+    main {
+        width: 80vw;
+        margin-left: 10vw;
+    }
+    .panel-content{
+      width: 87vw;
+      margin-left: 5vw;
+    }
+
+    #help-main{
+      margin-left: 2vw;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    main {
+        width: 100vw;
+        margin-left: 0vw;
+    }
+    #help-main{
+      margin-left: 0vw;
+    }
+
+    .panel-content img{
+      transform: scale(0.7) translateX(-20%);
+    }
+  }

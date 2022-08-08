@@ -1,1 +1,14 @@
 node_modules
+<<<<<<< HEAD
+=======
+.env
+coverage
+coverage.json
+typechain
+typechain-types
+
+#Hardhat files
+cache
+artifacts
+
+>>>>>>> Web3-dev
