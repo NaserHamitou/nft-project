@@ -61,9 +61,10 @@ const Main = () => {
                                 <div style={{marginRight: '15px', border: '2px solid black', borderRadius: '5px', padding: '4px'}}>Close</div>
                             </div> */}
                             <h2> Welcome !</h2>
-                            <p>Please connect to your MetaMask account to mint.
+                            <p>Please connect to your MetaMask account to mint and make sure to chose the Rinkeby Test Network.
                                 <br/> 
                                 Don't worry it's completely free! 🙌
+
                             </p>
                             <hr/>
                             <p>

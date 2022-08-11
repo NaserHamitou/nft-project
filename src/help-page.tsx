@@ -28,7 +28,7 @@ const HelpPage = () => {
                     <div className="plus">❯</div>
                     <label htmlFor="q1" className="panel-title">How does it work?</label>
                     <div className="panel-content">
-                        This is web3 application allows you to own a randomly generated NFT 
+                        This web3 application allows you to own a randomly generated NFT 
                         with a process called minting.
                         <br></br>
                         1. Add the&nbsp; 
